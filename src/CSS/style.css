@@ -26,11 +26,11 @@ h2 {
 }
 
 /* Caixa do formulário */
-form {
+form {  
   background-color: #fff;
   padding: 30px 40px;
-  border-radius: 8px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 20 20 150px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 400px;
 }
@@ -48,11 +48,11 @@ input[type="text"],
 input[type="password"],
 input[type="email"] {
   width: 100%;
-  padding: 10px;
+  padding: 8px;
   margin-top: 5px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 10px;
   font-size: 1em;
 }
 
