@@ -1,13 +1,17 @@
-import { v4 as uuidv4 } from 'uuid';
 
-// geração de id unico com uso da biblioteca uuid
+// geração de id unico
 function gerarId() {
 
-  return uuidv4()
+  return Math.random(1 * 100)
 }
 
 // função de cadastro de aluno no sistema
-function cadastrarAluno(nome, senha, email, cpf){ // alterar variaveis para inputs do front
+function cadastrarAluno(){
+
+    const nome = document.querySelector('#nome').value
+    const senha = document.querySelector('#senha').value
+    const email = document.querySelector('#email').value
+    const cpf = document.querySelector('#cpf').value
 
     let obj = {
         id: gerarId(),
@@ -22,15 +26,20 @@ function cadastrarAluno(nome, senha, email, cpf){ // alterar variaveis para inpu
 
     localStorage.setItem(obj.id, objJson)
     localStorage.setItem('emailIndex:' + email, obj.id);
+
 }
 
 // função para efetuar login do aluno
-function loginAluno(email, senha){ // alterar variaveis para inputs do front
+function loginAluno(){ 
+
+    const email = document.querySelector('#email').value
+    const senha = document.querySelector('#senha').value
 
     const aluno = checarAluno(email, senha)
   
     if (aluno){
        console.log("login efetuado com sucesso!!!")
+       window.location.href = "src\HTML\biblioteca.htm"
     } else {
         console.log("Email ou senha incorretos!!!")
     }

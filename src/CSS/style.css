@@ -57,7 +57,7 @@ input[type="email"] {
 }
 
 /* Botão de envio */
-input[type="submit"] {
+input[type="button"] {
   background-color: #007bff;
   color: white;
   padding: 12px 20px;
@@ -69,6 +69,6 @@ input[type="submit"] {
   transition: background-color 0.3s ease;
 }
 
-input[type="submit"]:hover {
-  background-color: #007bff;
+input[type="button"]:hover {
+  background-color: #3e80c7;
 }
