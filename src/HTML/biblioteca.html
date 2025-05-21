@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emprestimos de livro</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script src="../app.js" defer></script>
+</head>
+<body>
+    <div id="box">
+        <label for="">Verifique os livros disponiveis</label>
+        <input type="button" value="Listar livros" onclick="listarLivros()" class="but">
+        <ul id="inventario"></ul>
+
+        <label for="">Informe o livro que voce deseja pegar emprestado: </label>
+        <input type="text" id="inpLivro">
+        <p id="emprestimo"></p>
+        <input type="button" value="Emprestimo" onclick="emprestimoLivro()" class="but">
+
+        <label for="">Clique no botão abaixo para devolver o livro!!!</label>
+        <p id="devolver"></p>
+        <input type="button" value="Devolver" onclick="devolverLivro()" class="but">
+        
+    </div>
+</body>
+</html>

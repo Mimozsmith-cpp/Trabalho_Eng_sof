@@ -1,0 +1,94 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  flex-direction: column; /* Garante que o título e o formulário fiquem na coluna */
+  text-align: center; /* Centraliza o texto dentro do body */
+}
+
+/* Título */
+h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Caixa do formulário */
+div {  
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 20 20 150px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Labels */
+label {
+  font-weight: bold;
+  color: #444;
+  display: block; /* Garante que os labels fiquem em linhas separadas dos campos */
+  margin-bottom: 5px;
+}
+
+p {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+/* Campos de entrada */
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1em;
+}
+
+/* Botão de envio */
+input[type="button"] {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1em;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+input[type="button"]:hover {
+  background-color: #3e80c7;
+}
+
+.but {
+  width: 20px;
+  margin-bottom: 20px;
+}
+
+#inventario {
+  list-style: circle;
+  margin-bottom: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: justify;
+}
+
+#inventario > li {
+  margin: 10px;
+}
