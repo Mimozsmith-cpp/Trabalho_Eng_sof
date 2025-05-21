@@ -26,7 +26,7 @@ h2 {
 }
 
 /* Caixa do formulário */
-form {  
+div {  
   background-color: #fff;
   padding: 30px 40px;
   border-radius: 12px;
@@ -43,6 +43,10 @@ label {
   margin-bottom: 5px;
 }
 
+p {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
 /* Campos de entrada */
 input[type="text"],
 input[type="password"],
@@ -71,4 +75,20 @@ input[type="button"] {
 
 input[type="button"]:hover {
   background-color: #3e80c7;
+}
+
+.but {
+  width: 20px;
+  margin-bottom: 20px;
+}
+
+#inventario {
+  list-style: circle;
+  margin-bottom: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: justify;
+}
+
+#inventario > li {
+  margin: 10px;
 }

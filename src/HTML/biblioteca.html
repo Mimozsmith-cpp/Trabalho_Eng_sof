@@ -10,14 +10,18 @@
 <body>
     <div id="box">
         <label for="">Verifique os livros disponiveis</label>
-        <button onclick="listarLivro()" class="but">Listar Livros</button>
+        <input type="button" value="Listar livros" onclick="listarLivros()" class="but">
+        <ul id="inventario"></ul>
 
         <label for="">Informe o livro que voce deseja pegar emprestado: </label>
         <input type="text" id="inpLivro">
-        <button onclick="emprestimoLivro()" class="but">Emprestimo</button>
+        <p id="emprestimo"></p>
+        <input type="button" value="Emprestimo" onclick="emprestimoLivro()" class="but">
 
         <label for="">Clique no botão abaixo para devolver o livro!!!</label>
-        <button onclick="devolverLivro()" class="but">Devolver</button>
+        <p id="devolver"></p>
+        <input type="button" value="Devolver" onclick="devolverLivro()" class="but">
+        
     </div>
 </body>
 </html>
